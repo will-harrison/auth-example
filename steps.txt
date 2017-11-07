@@ -1,0 +1,38 @@
+Auth Setup
+  Install required packages
+    packages:
+      jsonwebtoken
+      hapi-auth-jwt2
+      bcrypt-as-promised
+
+  Add hapi-auth-jwt2 to index and use as a plugin in server.register
+
+  Modify 'api' plugin and auth scheme Setup. Set default auth method
+
+  Add auth.mode as optional to route configs that are public
+
+  Set up User model to include methods to: 
+    generatePassword()
+      should generate salt and hash
+        update the user with the hash value in the password field
+    execute generate password before saving a new user
+    confirm password
+
+  improve signup/create user endpoint by filtering to see if email exists
+
+  modify user model to include methods to compare password
+    comparePassword()
+      bcrypt.compare()
+    if compare is false, return false, else return user
+  
+  modify login endpoint to
+    get user with login email
+    if there is a user, compare with comparePassword()
+    if no user, throw err
+    if compare is successful, return authenticated user, else throw err
+
+  modify user model to include methods to
+    generateJWT(user)
+    jwt.sign(data, secretKey, optionsObject)
+
+  improve login to generate a web token before sending the authed user back in the http response
