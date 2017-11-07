@@ -1,0 +1,23 @@
+2017-11-06T11:54:21.152503000 0.183051s notice: Recursively removing directory /Users/Will/Documents/DevtreeAcademy/auth-api-example/rethinkdb_data/tmp
+2017-11-06T11:54:21.154168000 0.184720s notice: Initializing directory /Users/Will/Documents/DevtreeAcademy/auth-api-example/rethinkdb_data
+2017-11-06T11:54:21.154319000 0.184867s info: Creating a default database for your convenience. (This is because you ran 'rethinkdb' without 'create', 'serve', or '--join', and the directory '/Users/Will/Documents/DevtreeAcademy/auth-api-example/rethinkdb_data' did not already exist or is empty.)
+2017-11-06T11:54:21.154377000 0.184924s notice: Running rethinkdb 2.3.6 (CLANG 8.1.0 (clang-802.0.42))...
+2017-11-06T11:54:21.160642000 0.191189s notice: Running on Darwin 16.7.0 x86_64
+2017-11-06T11:54:21.160694000 0.191241s notice: Loading data from directory /Users/Will/Documents/DevtreeAcademy/auth-api-example/rethinkdb_data
+2017-11-06T11:54:22.203817000 1.234408s info: Automatically using cache size of 455 MB
+2017-11-06T11:54:22.204377000 1.234967s notice: Listening for intracluster connections on port 29015
+2017-11-06T11:54:22.206072000 1.236663s notice: Listening for client driver connections on port 28015
+2017-11-06T11:54:22.206332000 1.236922s notice: Listening for administrative HTTP connections on port 8080
+2017-11-06T11:54:22.206338000 1.236928s notice: Listening on cluster addresses: 127.0.0.1, ::1
+2017-11-06T11:54:22.206346000 1.236936s notice: Listening on driver addresses: 127.0.0.1, ::1
+2017-11-06T11:54:22.206349000 1.236939s notice: Listening on http addresses: 127.0.0.1, ::1
+2017-11-06T11:54:22.206356000 1.236946s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2017-11-06T11:54:22.206380000 1.236970s notice: Server ready, "toph_lan_qwu" e78a60b7-fd2e-4ba6-ad68-a62967857ac7
+2017-11-06T11:55:32.804537000 71.837705s info: Table 3340a683-d5b1-4fb0-a92e-63b81e7ef6bb: Starting a new Raft election for term 1.
+2017-11-06T11:55:32.805216000 71.838383s info: Table 3340a683-d5b1-4fb0-a92e-63b81e7ef6bb: Added replica on this server.
+2017-11-06T11:55:33.004477000 72.037645s info: Table 3340a683-d5b1-4fb0-a92e-63b81e7ef6bb: This server is Raft leader for term 1. Latest log index is 0.
+2017-11-06T15:56:46.168228000 14545.722158s notice: Server got SIGINT from pid 27877, uid 501; shutting down...
+2017-11-06T15:56:46.168427000 14545.722357s notice: Shutting down client connections...
+2017-11-06T15:56:46.168608000 14545.722537s notice: All client connections closed.
+2017-11-06T15:56:46.168615000 14545.722544s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
+2017-11-06T15:56:46.252026000 14545.805956s notice: Storage engine shut down.
